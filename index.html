@@ -17,6 +17,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Bootsrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 </head>
 
 <body class="dark:bg-gray-950 text-gray-800 font-sans min-h-screen">
@@ -27,8 +30,8 @@
         <p class="text-gray-600">Welcome to my portfolio site!</p>
     </div> -->
 
-    <!-- Hero Section -->
-    <section class="h-screen border-b border-white">
+    <!-- Hero section -->
+    <section class="h-screen">
         <div class="flex items-center justify-center h-full w-full">
             <div class="flex w-[50vw]">
                 <div class="flex-1 p-[2rem]">
@@ -37,8 +40,8 @@
                     </div>
                 </div>
                 <div class="flex-1 p-[2rem]">
-                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_3rem_3rem_0] mb-[1rem]">
-                        <p class="text-4xl font-bold mb-[1rem] tracking-tighter text-balance">
+                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_3rem_3rem_0] mb-4">
+                        <p class="text-4xl font-bold mb-4 tracking-tighter text-balance">
                             Hello, <br>
                             I'm Canny Cañete
                         </p>
@@ -48,7 +51,7 @@
                         </p>
                     </div>
 
-                    <div class="bg-gray-800 p-[2rem] rounded-[0rem_3rem_3rem_3rem] w-fit">
+                    <div class="bg-gray-800 p-[2rem] rounded-[0rem_3rem_3rem_3rem] w-fit border-2 border-white">
                         <p class="text-lg font-medium text-white">
                             Let's connect!
                         </p>
@@ -58,22 +61,24 @@
         </div>
     </section>
 
-    <section class="h-screen">
+    <!-- Experience and Tools section -->
+    <section class="h-fit">
         <div class="flex items-center justify-center h-full w-full">
             <div class="flex w-[75vw]">
                 <div class="flex-1 p-[2rem]">
                     <p
-                        class="text-4xl text-white font-bold tracking-tighter text-balance bg-gray-800 p-[2rem] rounded-[3rem_3rem_0rem_3rem] w-fit ms-auto mb-[1rem]">
+                        class="text-4xl text-white font-bold tracking-tighter text-balance bg-gray-800 p-[2rem] rounded-[3rem_3rem_0rem_3rem] w-fit ms-auto mb-4">
                         My Experience</p>
 
-                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_0rem_0rem_3rem] mb-[1rem]">
+                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_0rem_0rem_3rem] mb-4">
                         <div class="flex items-start gap-3 mb-[2rem]">
                             <img src="img/vstecs-logo.png" alt="VST-ECS Phils., Inc. Logo" class="w-[256px]">
                             <div>
-                                <p class="text-xl font-medium tracking-tighter text-balance mb-[1rem]">Application
-                                    Developer</p>
+                                <p class="text-xl font-medium tracking-tighter text-balance mb-4">
+                                    Application/Web Developer
+                                </p>
                                 <p class="text-base">Jul 2023 - Present · 2 years</p>
-                                <p class="text-base mb-[1rem]">Iligan, Northern Mindanao, Philippines · On-site</p>
+                                <p class="text-base mb-4">Iligan, Northern Mindanao, Philippines · On-site</p>
 
                                 <!-- <p class="text-base">
                                     I have developed and been mentaining a CWT and Inventory systems for internal use of the VST-ECS Phils., Inc.
@@ -84,10 +89,11 @@
                         <div class="flex items-start gap-3">
                             <img src="img/cdb.png" alt="Creative Digital Builders Logo" class="w-[256px]">
                             <div>
-                                <p class="text-xl font-medium tracking-tighter text-balance mb-[1rem]">Junior Web
-                                    Developer</p>
+                                <p class="text-xl font-medium tracking-tighter text-balance mb-4">
+                                    Junior Web Developer
+                                </p>
                                 <p class="text-base">Jun 2022 - Mar 2023 · 10 months</p>
-                                <p class="text-base mb-[1rem]">Iligan, Northern Mindanao, Philippines · On-site</p>
+                                <p class="text-base mb-4">Iligan, Northern Mindanao, Philippines · On-site</p>
 
                                 <!-- <p class="text-base">
                                     I developed a CRM System for a U.S based insurance company, 
@@ -100,8 +106,9 @@
                     <div
                         class="flex items-start gap-3 bg-gray-800 p-[2rem] rounded-[3rem_0rem_3rem_3rem] w-fit ms-auto">
                         <div class="w-fit ms-auto">
-                            <p class="text-xl font-medium text-white tracking-tighter text-balance mb-2">Freelance Web
-                                Developer/Designer</p>
+                            <p class="text-xl font-medium text-white tracking-tighter text-balance mb-2">
+                                Freelance Web Developer/Designer
+                            </p>
                             <p class="text-base text-stone-400">Aug 2022 - Present</p>
 
                             <!-- <p class="text-base">
@@ -111,29 +118,91 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex-1 p-[2rem] bg-gray-800 rounded-[3rem]">
-                    <p class="text-4xl text-white font-bold tracking-tighter text-balance">Tools I Use</p>
-                    <div class="grid grid-cols-4">
-                        <img src="img/html.svg" class="w-20">
-                        <img src="img/css.svg" class="w-20">
-                        <img src="img/bootsrap.svg" class="w-20">
-                        <img src="img/tailwind.png" class="w-20">
+                <div class="flex-1 p-[4rem] bg-gray-800 rounded-[3rem] border-2 border-white">
+                    <p class="text-4xl text-white font-bold tracking-tighter text-balance mb-4">Tools I Use</p>
+                    <div class="mb-4">
+                        <p class="text-xl font-medium text-white tracking-tighter text-balance mb-4">Frontend</p>
+                        <div class="grid grid-cols-4 gap-4 items-center">
+                            <img src="img/vueJs.png" class="w-20">
+                            <img src="img/js.svg" class="w-20">
+                            <img src="img/html.svg" class="w-20">
+                            <img src="img/css.svg" class="w-20">
+                            <img src="img/bootsrap.svg" class="w-20">
+                            <img src="img/tailwind.png" class="w-20">
+                        </div>
                     </div>
-                    <div class="grid grid-cols-4">
-                        <img src="img/php.svg" class="w-20">
-                        <img src="img/laravel.svg" class="w-20">
-                        <img src="img/js.svg" class="w-20">
-                        <img src="img/vueJs.png" class="w-20">
+
+                    <div class="mb-4">
+                        <p class="text-xl font-medium text-white tracking-tighter text-balance mb-4">Backend</p>
+                        <div class="grid grid-cols-4 gap-4 items-center">
+                            <img src="img/laravel.svg" class="w-20">
+                            <img src="img/php.svg" class="w-20">
+                        </div>
                     </div>
-                    <div class="grid grid-cols-4">
-                        <img src="img/vscode.png" class="w-20">
-                        <img src="img/photoshop.png" class="w-20">
-                        <img src="img/illustrator.png" class="w-20">
-                        <img src="img/figma.png" class="w-20">
+
+                    <div class="mb-4">
+                        <p class="text-xl font-medium text-white tracking-tighter text-balance mb-4">Design</p>
+                        <div class="grid grid-cols-4 gap-4 items-center">
+                            <img src="img/photoshop.png" class="w-20">
+                            <img src="img/illustrator.png" class="w-20">
+                            <img src="img/figma.png" class="w-20">
+                        </div>
                     </div>
+
+                    <div>
+                        <p class="text-xl font-medium text-white tracking-tighter text-balance mb-4">IDE</p>
+                        <div class="grid grid-cols-4 gap-4 items-center">
+                            <img src="img/vscode.png" class="w-20">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="h-screen">
+        <div class="flex items-center justify-center h-full w-full">
+            <div class="flex w-[50vw]">
+                <div class="flex py-[2rem]">
+                    <div class="w-fit h-fit p-4 mt-auto bg-gray-800 rounded-full">
+                        <img src="img/profile-img.jpg" alt="Profile Picture" class="w-20 rounded-full">
+                    </div>
+                </div>
+
+                <div class="flex-[3] p-[2rem]">
+                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_3rem_3rem_0] mb-4">
+                        <p class="text-4xl font-bold mb-4 tracking-tighter text-balance">
+                            Let's work together! <br>
+                            Contact me
+                        </p>
+                        <p>Thank you for taking the time to view my portfolio.
+                            If you are interested in working with me, dont't hesitate to reach out to me via my contact
+                            information below.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-gray-800 p-[2rem] rounded-[0rem_3rem_3rem_3rem] w-fit border-2 border-white text-white">
+                        <a class="flex items-center gap-4 text-lg font-medium text-justify"
+                            href="https://www.linkedin.com/in/canny-ca%C3%B1ete-5a8a7a23b/" target="_blank">
+                            <i class="bi-linkedin"></i>
+                            <span>linkedin.com/in/canny-cañete</span>
+                        </a>
+                        <a class="flex items-center gap-4 text-lg font-medium text-justify"
+                            href="mailto:canny.n.canete@gmail.com" target="_blank">
+                            <i class="bi-envelope-fill"></i>
+                            <span>canny.n.canete@gmail.com</span>
+                        </a>
+                        <a class="flex items-center gap-4 text-lg font-medium text-justify"
+                            href="linkedin.com/in/canny-cañete-5a8a7a23b" target="_blank">
+                            <i class="bi-telephone-fill"></i>
+                            <span>+6395 5972 9443</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
