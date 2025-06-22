@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canny Cañete | Web Developer Portfolio</title>
+
+    <!-- Tailwind config first -->
+    <script src="tailwind-config.js"></script>
+
+    <!-- Tailwind CDN (respects config above) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Vue 3 CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark:bg-gray-950 text-gray-800 font-sans min-h-screen">
+
+    <!-- Vue App Mount Point -->
+    <!-- <div id="app" class="text-center p-8">
+        <h1 class="text-4xl font-bold mb-2">{{ message }}</h1>
+        <p class="text-gray-600">Welcome to my portfolio site!</p>
+    </div> -->
+
+    <!-- Hero Section -->
+    <section class="h-screen border-b border-white">
+        <div class="flex items-center justify-center h-full w-full">
+            <div class="flex w-[50vw]">
+                <div class="flex-1 p-[2rem]">
+                    <div class="mt-[3rem] p-[2rem] bg-gray-800 rounded-full">
+                        <img src="img/profile-img.jpg" alt="Profile Picture" class="m-auto rounded-full">
+                    </div>
+                </div>
+                <div class="flex-1 p-[2rem]">
+                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_3rem_3rem_0] mb-[1rem]">
+                        <p class="text-4xl font-bold mb-[1rem] tracking-tighter text-balance">
+                            Hello, <br>
+                            I'm Canny Cañete
+                        </p>
+                        <p class="text-lg font-medium text-justify">
+                            I build clean, functional, and business-ready web applications
+                            from dashboards to systems and anything in between
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-800 p-[2rem] rounded-[0rem_3rem_3rem_3rem] w-fit">
+                        <p class="text-lg font-medium text-white">
+                            Let's connect!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-screen">
+        <div class="flex items-center justify-center h-full w-full">
+            <div class="flex w-[75vw]">
+                <div class="flex-1 p-[2rem]">
+                    <p
+                        class="text-4xl text-white font-bold tracking-tighter text-balance bg-gray-800 p-[2rem] rounded-[3rem_3rem_0rem_3rem] w-fit ms-auto mb-[1rem]">
+                        My Experience</p>
+
+                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_0rem_0rem_3rem] mb-[1rem]">
+                        <div class="flex items-start gap-3 mb-[2rem]">
+                            <img src="img/vstecs-logo.png" alt="VST-ECS Phils., Inc. Logo" class="w-[256px]">
+                            <div>
+                                <p class="text-xl font-medium tracking-tighter text-balance mb-[1rem]">Application
+                                    Developer</p>
+                                <p class="text-base">Jul 2023 - Present · 2 years</p>
+                                <p class="text-base mb-[1rem]">Iligan, Northern Mindanao, Philippines · On-site</p>
+
+                                <!-- <p class="text-base">
+                                    I have developed and been mentaining a CWT and Inventory systems for internal use of the VST-ECS Phils., Inc.
+                                </p> -->
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <img src="img/cdb.png" alt="Creative Digital Builders Logo" class="w-[256px]">
+                            <div>
+                                <p class="text-xl font-medium tracking-tighter text-balance mb-[1rem]">Junior Web
+                                    Developer</p>
+                                <p class="text-base">Jun 2022 - Mar 2023 · 10 months</p>
+                                <p class="text-base mb-[1rem]">Iligan, Northern Mindanao, Philippines · On-site</p>
+
+                                <!-- <p class="text-base">
+                                    I developed a CRM System for a U.S based insurance company, 
+                                    I designed a landing page and input form UI for a travel agancy based in Philippines.
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex items-start gap-3 bg-gray-800 p-[2rem] rounded-[3rem_0rem_3rem_3rem] w-fit ms-auto">
+                        <div class="w-fit ms-auto">
+                            <p class="text-xl font-medium text-white tracking-tighter text-balance mb-2">Freelance Web
+                                Developer/Designer</p>
+                            <p class="text-base text-stone-400">Aug 2022 - Present</p>
+
+                            <!-- <p class="text-base">
+                                I have work for both overseas and local clients, developing all kinds of systems from 
+                                Online Reservation Systems to E-commerce websites and everything in between.
+                            </p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 p-[2rem] bg-gray-800 rounded-[3rem]">
+                    <p class="text-4xl text-white font-bold tracking-tighter text-balance">Tools I Use</p>
+                    <div class="grid grid-cols-4">
+                        <img src="img/html.svg" class="w-20">
+                        <img src="img/css.svg" class="w-20">
+                        <img src="img/bootsrap.svg" class="w-20">
+                        <img src="img/tailwind.png" class="w-20">
+                    </div>
+                    <div class="grid grid-cols-4">
+                        <img src="img/php.svg" class="w-20">
+                        <img src="img/laravel.svg" class="w-20">
+                        <img src="img/js.svg" class="w-20">
+                        <img src="img/vueJs.png" class="w-20">
+                    </div>
+                    <div class="grid grid-cols-4">
+                        <img src="img/vscode.png" class="w-20">
+                        <img src="img/photoshop.png" class="w-20">
+                        <img src="img/illustrator.png" class="w-20">
+                        <img src="img/figma.png" class="w-20">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Vue logic -->
+    <script src="app.js"></script>
+</body>
+
+</html>
