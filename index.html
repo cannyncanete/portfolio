@@ -12,6 +12,9 @@
     <!-- Tailwind CDN (respects config above) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Flowbite - Tailwind CSS component library -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
     <!-- Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
 
@@ -32,7 +35,7 @@
 
     <!-- Hero section -->
     <section class="h-screen">
-        <div class="flex items-center justify-center h-full w-full">
+        <div class="container mx-auto px-4 py-20 flex items-center justify-center h-full w-full">
             <div class="flex w-[50vw]">
                 <div class="flex-1 p-[2rem]">
                     <div class="mt-[3rem] p-[2rem] bg-gray-800 rounded-full">
@@ -62,15 +65,15 @@
     </section>
 
     <!-- Experience and Tools section -->
-    <section class="h-fit">
-        <div class="flex items-center justify-center h-full w-full">
+    <section class="mx-auto py-20">
+        <div class="container mx-auto px-4 flex items-center justify-center h-full w-full">
             <div class="flex w-[75vw]">
                 <div class="flex-1 p-[2rem]">
                     <p
-                        class="text-4xl text-white font-bold tracking-tighter text-balance bg-gray-800 p-[2rem] rounded-[3rem_3rem_0rem_3rem] w-fit ms-auto mb-4">
+                        class="text-4xl text-white font-bold tracking-tighter text-balance bg-gray-800 p-[2rem] rounded-[3rem] w-fit ms-auto mb-4">
                         My Experience</p>
 
-                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_0rem_0rem_3rem] mb-4">
+                    <div class="bg-amber-400 p-[2rem] rounded-[3rem] mb-4">
                         <div class="flex items-start gap-3 mb-[2rem]">
                             <img src="img/vstecs-logo.png" alt="VST-ECS Phils., Inc. Logo" class="w-[256px]">
                             <div>
@@ -103,8 +106,7 @@
                         </div>
                     </div>
 
-                    <div
-                        class="flex items-start gap-3 bg-gray-800 p-[2rem] rounded-[3rem_0rem_3rem_3rem] w-fit ms-auto">
+                    <div class="flex items-start gap-3 bg-gray-800 p-[2rem] rounded-[3rem] w-fit ms-auto">
                         <div class="w-fit ms-auto">
                             <p class="text-xl font-medium text-white tracking-tighter text-balance mb-2">
                                 Freelance Web Developer/Designer
@@ -118,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex-1 p-[4rem] bg-gray-800 rounded-[3rem] border-2 border-white">
+                <div class="flex-1 p-[4rem] bg-gray-800 rounded-[3rem]">
                     <p class="text-4xl text-white font-bold tracking-tighter text-balance mb-4">Tools I Use</p>
                     <div class="mb-4">
                         <p class="text-xl font-medium text-white tracking-tighter text-balance mb-4">Frontend</p>
@@ -161,8 +163,140 @@
         </div>
     </section>
 
+    <!-- Works section-->
+    <section class="bg-gray-800">
+        <div class="container mx-auto px-4 h-full w-full py-20 text-white">
+            <p class="text-4xl text-white font-bold tracking-tighter text-balance mb-4">
+                My Works
+            </p>
+
+            <!-- Tailwind CSS Carousel - Flowbite -->
+            <div id="default-carousel" class="relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="flex items-center gap-4">
+                            <div class="flex-[1]">
+                                <p class="text-2xl font-bold mb-2 tracking-tighter text-balance">
+                                    CWT System
+                                </p>
+
+                                <p class="text-base mb-2">Automated tax compliance tool for processing invoices, calculating withholding taxes, and generating BIR-mandated reports.</p>
+
+                                <ul class="text-base list-disc ps-6 mb-4">
+                                    <li>Invoice parsing with CWT rate auto-calculation (1%-15%).</li>
+                                    <li>Generates CWT certificates</li>
+                                    <li>Summarizes withheld taxes by payee, tax rate, and period</li>
+                                </ul>
+
+                                <!-- <ul class="text-base ps-6">
+                                    <li><strong>Complexity:</strong> Built dynamic tax rule engines (not just static forms).</li>
+                                    <li><strong>Problem-solving:</strong> Reduced manual filing errors by 30% for accounting teams.</li>
+                                </ul> -->
+                            </div>
+                            <div class="flex-[3] flex items-center gap-3">
+                                <img src="img/screenshots/cwt-modal.png" class="w-[50%]">
+                                <img src="img/screenshots/cwt-dashboard.png" class="w-[50%]">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="flex items-center gap-4">
+                            <div class="flex-[1]">
+                                <p class="text-2xl font-bold mb-2 tracking-tighter text-balance">
+                                    E-Commerce Platform (Local Business)
+                                </p>
+
+                                <p class="text-base mb-2">End-to-end online store for a local business, including customer cart/checkout and admin inventory/sales tracking.</p>
+                                <ul class="text-base list-disc ps-6">
+                                    <li><strong>Customers</strong> can browse all available items online, add to cart, and pay</li>
+                                    <li><strong>Admin</strong> have access to all inventory, incoming/outgoing record of items, and sales dashboard</li>
+                                </ul>
+
+                                <!-- <ul class="text-base ps-6">
+                                    <li><strong>Complexity:</strong> Integrated payment gateways + dynamic inventory sync.</li>
+                                    <li><strong>Problem-solving:</strong> Boosted sales with 24/7 online availability.</li>
+                                </ul> -->
+                            </div>
+                            <div class="flex-[3] flex items-center gap-3">
+                                 <img src="img/screenshots/aliman-store.png" class="w-[50%]">
+                                 <img src="img/screenshots/aliman-dashboard.png" class="w-[50%]">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="flex items-center gap-4">
+                            <div class="flex-[1]">
+                                <p class="text-2xl font-bold mb-2 tracking-tighter text-balance">
+                                    CRM System
+                                </p>
+
+                                <p class="text-base mb-2">Centralized hub for tracking clients, leads, vendors, and tasks—optimizing sales and support workflows.</p>
+                                <ul class="text-base list-disc ps-6">
+                                    <li>Organized databases for storing contact details, communication history, and transaction records.</li>
+                                    <li>Assign tasks (e.g., follow-ups, meetings) to team members with deadlines.</li>
+                                    <li>Visual dashboards for pending actions or overdue tasks.</li>
+                                </ul>
+
+                            </div>
+                            <div class="flex-[3] flex items-center gap-3">
+                                 <img src="img/screenshots/crm.png" class="w-[50%]">
+                                 <img src="img/screenshots/crm-table.png" class="w-[50%]">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Contact section -->
-    <section class="h-screen">
+    <section class="container mx-auto py-20">
         <div class="flex items-center justify-center h-full w-full">
             <div class="flex w-[50vw]">
                 <div class="flex py-[2rem]">
@@ -177,7 +311,7 @@
                             Let's work together! <br>
                             Contact me
                         </p>
-                        <p>Thank you for taking the time to view my portfolio.
+                        <p class="text-lg font-medium text-justify">Thank you for taking the time to view my portfolio.
                             If you are interested in working with me, dont't hesitate to reach out to me via my contact
                             information below.
                         </p>
@@ -208,6 +342,9 @@
 
     <!-- Vue logic -->
     <script src="app.js"></script>
+
+    <!-- Required script for Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
