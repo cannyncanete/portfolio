@@ -12,11 +12,17 @@
     <!-- Tailwind CDN (respects config above) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Flowbite - Tailwind CSS component library -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
     <!-- Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Bootsrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 </head>
 
 <body class="dark:bg-gray-950 text-gray-800 font-sans min-h-screen">
@@ -27,9 +33,9 @@
         <p class="text-gray-600">Welcome to my portfolio site!</p>
     </div> -->
 
-    <!-- Hero Section -->
-    <section class="h-screen border-b border-white">
-        <div class="flex items-center justify-center h-full w-full">
+    <!-- Hero section -->
+    <section class="h-screen">
+        <div class="container mx-auto px-4 py-20 flex items-center justify-center h-full w-full">
             <div class="flex w-[50vw]">
                 <div class="flex-1 p-[2rem]">
                     <div class="mt-[3rem] p-[2rem] bg-gray-800 rounded-full">
@@ -37,8 +43,8 @@
                     </div>
                 </div>
                 <div class="flex-1 p-[2rem]">
-                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_3rem_3rem_0] mb-[1rem]">
-                        <p class="text-4xl font-bold mb-[1rem] tracking-tighter text-balance">
+                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_3rem_3rem_0] mb-4">
+                        <p class="text-4xl font-bold mb-4 tracking-tighter text-balance">
                             Hello, <br>
                             I'm Canny Cañete
                         </p>
@@ -48,7 +54,7 @@
                         </p>
                     </div>
 
-                    <div class="bg-gray-800 p-[2rem] rounded-[0rem_3rem_3rem_3rem] w-fit">
+                    <div class="bg-gray-800 p-[2rem] rounded-[0rem_3rem_3rem_3rem] w-fit border-2 border-white">
                         <p class="text-lg font-medium text-white">
                             Let's connect!
                         </p>
@@ -58,22 +64,24 @@
         </div>
     </section>
 
-    <section class="h-screen">
-        <div class="flex items-center justify-center h-full w-full">
+    <!-- Experience and Tools section -->
+    <section class="mx-auto py-20">
+        <div class="container mx-auto px-4 flex items-center justify-center h-full w-full">
             <div class="flex w-[75vw]">
                 <div class="flex-1 p-[2rem]">
                     <p
-                        class="text-4xl text-white font-bold tracking-tighter text-balance bg-gray-800 p-[2rem] rounded-[3rem_3rem_0rem_3rem] w-fit ms-auto mb-[1rem]">
+                        class="text-4xl text-white font-bold tracking-tighter text-balance bg-gray-800 p-[2rem] rounded-[3rem] w-fit ms-auto mb-4">
                         My Experience</p>
 
-                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_0rem_0rem_3rem] mb-[1rem]">
+                    <div class="bg-amber-400 p-[2rem] rounded-[3rem] mb-4">
                         <div class="flex items-start gap-3 mb-[2rem]">
                             <img src="img/vstecs-logo.png" alt="VST-ECS Phils., Inc. Logo" class="w-[256px]">
                             <div>
-                                <p class="text-xl font-medium tracking-tighter text-balance mb-[1rem]">Application
-                                    Developer</p>
+                                <p class="text-xl font-medium tracking-tighter text-balance mb-4">
+                                    Application/Web Developer
+                                </p>
                                 <p class="text-base">Jul 2023 - Present · 2 years</p>
-                                <p class="text-base mb-[1rem]">Iligan, Northern Mindanao, Philippines · On-site</p>
+                                <p class="text-base mb-4">Iligan, Northern Mindanao, Philippines · On-site</p>
 
                                 <!-- <p class="text-base">
                                     I have developed and been mentaining a CWT and Inventory systems for internal use of the VST-ECS Phils., Inc.
@@ -84,10 +92,11 @@
                         <div class="flex items-start gap-3">
                             <img src="img/cdb.png" alt="Creative Digital Builders Logo" class="w-[256px]">
                             <div>
-                                <p class="text-xl font-medium tracking-tighter text-balance mb-[1rem]">Junior Web
-                                    Developer</p>
+                                <p class="text-xl font-medium tracking-tighter text-balance mb-4">
+                                    Junior Web Developer
+                                </p>
                                 <p class="text-base">Jun 2022 - Mar 2023 · 10 months</p>
-                                <p class="text-base mb-[1rem]">Iligan, Northern Mindanao, Philippines · On-site</p>
+                                <p class="text-base mb-4">Iligan, Northern Mindanao, Philippines · On-site</p>
 
                                 <!-- <p class="text-base">
                                     I developed a CRM System for a U.S based insurance company, 
@@ -97,11 +106,11 @@
                         </div>
                     </div>
 
-                    <div
-                        class="flex items-start gap-3 bg-gray-800 p-[2rem] rounded-[3rem_0rem_3rem_3rem] w-fit ms-auto">
+                    <div class="flex items-start gap-3 bg-gray-800 p-[2rem] rounded-[3rem] w-fit ms-auto">
                         <div class="w-fit ms-auto">
-                            <p class="text-xl font-medium text-white tracking-tighter text-balance mb-2">Freelance Web
-                                Developer/Designer</p>
+                            <p class="text-xl font-medium text-white tracking-tighter text-balance mb-2">
+                                Freelance Web Developer/Designer
+                            </p>
                             <p class="text-base text-stone-400">Aug 2022 - Present</p>
 
                             <!-- <p class="text-base">
@@ -111,34 +120,231 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex-1 p-[2rem] bg-gray-800 rounded-[3rem]">
-                    <p class="text-4xl text-white font-bold tracking-tighter text-balance">Tools I Use</p>
-                    <div class="grid grid-cols-4">
-                        <img src="img/html.svg" class="w-20">
-                        <img src="img/css.svg" class="w-20">
-                        <img src="img/bootsrap.svg" class="w-20">
-                        <img src="img/tailwind.png" class="w-20">
+                <div class="flex-1 p-[4rem] bg-gray-800 rounded-[3rem]">
+                    <p class="text-4xl text-white font-bold tracking-tighter text-balance mb-4">Tools I Use</p>
+                    <div class="mb-4">
+                        <p class="text-xl font-medium text-white tracking-tighter text-balance mb-4">Frontend</p>
+                        <div class="grid grid-cols-4 gap-4 items-center">
+                            <img src="img/vueJs.png" class="w-20">
+                            <img src="img/js.svg" class="w-20">
+                            <img src="img/html.svg" class="w-20">
+                            <img src="img/css.svg" class="w-20">
+                            <img src="img/bootsrap.svg" class="w-20">
+                            <img src="img/tailwind.png" class="w-20">
+                        </div>
                     </div>
-                    <div class="grid grid-cols-4">
-                        <img src="img/php.svg" class="w-20">
-                        <img src="img/laravel.svg" class="w-20">
-                        <img src="img/js.svg" class="w-20">
-                        <img src="img/vueJs.png" class="w-20">
+
+                    <div class="mb-4">
+                        <p class="text-xl font-medium text-white tracking-tighter text-balance mb-4">Backend</p>
+                        <div class="grid grid-cols-4 gap-4 items-center">
+                            <img src="img/laravel.svg" class="w-20">
+                            <img src="img/php.svg" class="w-20">
+                        </div>
                     </div>
-                    <div class="grid grid-cols-4">
-                        <img src="img/vscode.png" class="w-20">
-                        <img src="img/photoshop.png" class="w-20">
-                        <img src="img/illustrator.png" class="w-20">
-                        <img src="img/figma.png" class="w-20">
+
+                    <div class="mb-4">
+                        <p class="text-xl font-medium text-white tracking-tighter text-balance mb-4">Design</p>
+                        <div class="grid grid-cols-4 gap-4 items-center">
+                            <img src="img/photoshop.png" class="w-20">
+                            <img src="img/illustrator.png" class="w-20">
+                            <img src="img/figma.png" class="w-20">
+                        </div>
                     </div>
+
+                    <div>
+                        <p class="text-xl font-medium text-white tracking-tighter text-balance mb-4">IDE</p>
+                        <div class="grid grid-cols-4 gap-4 items-center">
+                            <img src="img/vscode.png" class="w-20">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Works section-->
+    <section class="bg-gray-800">
+        <div class="container mx-auto px-4 h-full w-full py-20 text-white">
+            <p class="text-4xl text-white font-bold tracking-tighter text-balance mb-4">
+                My Works
+            </p>
+
+            <!-- Tailwind CSS Carousel - Flowbite -->
+            <div id="default-carousel" class="relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="flex items-center gap-4">
+                            <div class="flex-[1]">
+                                <p class="text-2xl font-bold mb-2 tracking-tighter text-balance">
+                                    CWT System
+                                </p>
+
+                                <p class="text-base mb-2">Automated tax compliance tool for processing invoices, calculating withholding taxes, and generating BIR-mandated reports.</p>
+
+                                <ul class="text-base list-disc ps-6 mb-4">
+                                    <li>Invoice parsing with CWT rate auto-calculation (1%-15%).</li>
+                                    <li>Generates CWT certificates</li>
+                                    <li>Summarizes withheld taxes by payee, tax rate, and period</li>
+                                </ul>
+
+                                <!-- <ul class="text-base ps-6">
+                                    <li><strong>Complexity:</strong> Built dynamic tax rule engines (not just static forms).</li>
+                                    <li><strong>Problem-solving:</strong> Reduced manual filing errors by 30% for accounting teams.</li>
+                                </ul> -->
+                            </div>
+                            <div class="flex-[3] flex items-center gap-3">
+                                <img src="img/screenshots/cwt-modal.png" class="w-[50%]">
+                                <img src="img/screenshots/cwt-dashboard.png" class="w-[50%]">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="flex items-center gap-4">
+                            <div class="flex-[1]">
+                                <p class="text-2xl font-bold mb-2 tracking-tighter text-balance">
+                                    E-Commerce Platform (Local Business)
+                                </p>
+
+                                <p class="text-base mb-2">End-to-end online store for a local business, including customer cart/checkout and admin inventory/sales tracking.</p>
+                                <ul class="text-base list-disc ps-6">
+                                    <li><strong>Customers</strong> can browse all available items online, add to cart, and pay</li>
+                                    <li><strong>Admin</strong> have access to all inventory, incoming/outgoing record of items, and sales dashboard</li>
+                                </ul>
+
+                                <!-- <ul class="text-base ps-6">
+                                    <li><strong>Complexity:</strong> Integrated payment gateways + dynamic inventory sync.</li>
+                                    <li><strong>Problem-solving:</strong> Boosted sales with 24/7 online availability.</li>
+                                </ul> -->
+                            </div>
+                            <div class="flex-[3] flex items-center gap-3">
+                                 <img src="img/screenshots/aliman-store.png" class="w-[50%]">
+                                 <img src="img/screenshots/aliman-dashboard.png" class="w-[50%]">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="flex items-center gap-4">
+                            <div class="flex-[1]">
+                                <p class="text-2xl font-bold mb-2 tracking-tighter text-balance">
+                                    CRM System
+                                </p>
+
+                                <p class="text-base mb-2">Centralized hub for tracking clients, leads, vendors, and tasks—optimizing sales and support workflows.</p>
+                                <ul class="text-base list-disc ps-6">
+                                    <li>Organized databases for storing contact details, communication history, and transaction records.</li>
+                                    <li>Assign tasks (e.g., follow-ups, meetings) to team members with deadlines.</li>
+                                    <li>Visual dashboards for pending actions or overdue tasks.</li>
+                                </ul>
+
+                            </div>
+                            <div class="flex-[3] flex items-center gap-3">
+                                 <img src="img/screenshots/crm.png" class="w-[50%]">
+                                 <img src="img/screenshots/crm-table.png" class="w-[50%]">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="container mx-auto py-20">
+        <div class="flex items-center justify-center h-full w-full">
+            <div class="flex w-[50vw]">
+                <div class="flex py-[2rem]">
+                    <div class="w-fit h-fit p-4 mt-auto bg-gray-800 rounded-full">
+                        <img src="img/profile-img.jpg" alt="Profile Picture" class="w-20 rounded-full">
+                    </div>
+                </div>
+
+                <div class="flex-[3] p-[2rem]">
+                    <div class="bg-amber-400 p-[2rem] rounded-[3rem_3rem_3rem_0] mb-4">
+                        <p class="text-4xl font-bold mb-4 tracking-tighter text-balance">
+                            Let's work together! <br>
+                            Contact me
+                        </p>
+                        <p class="text-lg font-medium text-justify">Thank you for taking the time to view my portfolio.
+                            If you are interested in working with me, dont't hesitate to reach out to me via my contact
+                            information below.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-gray-800 p-[2rem] rounded-[0rem_3rem_3rem_3rem] w-fit border-2 border-white text-white">
+                        <a class="flex items-center gap-4 text-lg font-medium text-justify"
+                            href="https://www.linkedin.com/in/canny-ca%C3%B1ete-5a8a7a23b/" target="_blank">
+                            <i class="bi-linkedin"></i>
+                            <span>linkedin.com/in/canny-cañete</span>
+                        </a>
+                        <a class="flex items-center gap-4 text-lg font-medium text-justify"
+                            href="mailto:canny.n.canete@gmail.com" target="_blank">
+                            <i class="bi-envelope-fill"></i>
+                            <span>canny.n.canete@gmail.com</span>
+                        </a>
+                        <a class="flex items-center gap-4 text-lg font-medium text-justify"
+                            href="linkedin.com/in/canny-cañete-5a8a7a23b" target="_blank">
+                            <i class="bi-telephone-fill"></i>
+                            <span>+6395 5972 9443</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Vue logic -->
     <script src="app.js"></script>
+
+    <!-- Required script for Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
